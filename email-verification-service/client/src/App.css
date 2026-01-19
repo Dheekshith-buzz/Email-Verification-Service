@@ -1,0 +1,679 @@
+/* ========== FIX BLACK UI & IMPROVE VISIBILITY ========== */
+
+/* 1. Fix black cards and text */
+.MuiCard-root {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid #e0e0e0;
+  color: #333333 !important;
+}
+
+.MuiCardContent-root {
+  color: #333333 !important;
+}
+
+/* 2. Fix typography colors */
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+.MuiTypography-body1,
+.MuiTypography-body2 {
+  color: #333333 !important;
+}
+
+/* 3. Fix stat cards specifically */
+.MuiPaper-root .MuiTypography-h4,
+.MuiCard-root .MuiTypography-h4 {
+  color: #1976d2 !important;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(25, 118, 210, 0.1);
+}
+
+.MuiPaper-root .MuiTypography-body2,
+.MuiCard-root .MuiTypography-body2 {
+  color: #666666 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 4. Status-specific colors */
+/* Valid - Green */
+.MuiChip-colorSuccess {
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Invalid - Red */
+.MuiChip-colorError {
+  background: linear-gradient(135deg, #f44336 0%, #ef5350 100%) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Warning - Orange */
+.MuiChip-colorWarning {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Info - Blue */
+.MuiChip-colorInfo {
+  background: linear-gradient(135deg, #2196f3 0%, #64b5f6 100%) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* 5. Fix table visibility */
+.MuiTable-root {
+  background: white;
+}
+
+.MuiTableCell-root {
+  color: #333333 !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  background: #f5f5f5;
+  color: #1976d2 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 6. Fix paper components */
+.MuiPaper-root {
+  background: white !important;
+  color: #333333 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 7. Fix text field colors */
+.MuiTextField-root .MuiInputLabel-root {
+  color: #666666 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-input {
+  color: #333333 !important;
+}
+
+/* 8. Fix button visibility */
+.MuiButton-contained {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+  font-weight: 600;
+  text-transform: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.MuiButton-outlined {
+  color: #1976d2 !important;
+  border-color: #1976d2 !important;
+  font-weight: 600;
+}
+
+/* 9. Fix app bar */
+.MuiAppBar-root {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  box-shadow: 0 4px 20px rgba(25, 118, 210, 0.3);
+}
+
+/* 10. Fix sidebar/drawer */
+.MuiDrawer-paper {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%) !important;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* 11. Fix alert colors */
+.MuiAlert-standardSuccess {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%) !important;
+  color: #2e7d32 !important;
+  border: 1px solid #a5d6a7;
+}
+
+.MuiAlert-standardError {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%) !important;
+  color: #c62828 !important;
+  border: 1px solid #ef9a9a;
+}
+
+.MuiAlert-standardWarning {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffcc80 100%) !important;
+  color: #ef6c00 !important;
+  border: 1px solid #ffb74d;
+}
+
+.MuiAlert-standardInfo {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+  color: #1565c0 !important;
+  border: 1px solid #90caf9;
+}
+
+/* 12. Fix icon colors */
+.MuiSvgIcon-root {
+  color: #1976d2 !important;
+}
+
+/* 13. Fix divider */
+.MuiDivider-root {
+  background: #e0e0e0 !important;
+}
+
+/* 14. Fix list items */
+.MuiListItem-root {
+  color: #333333 !important;
+}
+
+/* 15. Fix progress colors */
+.MuiCircularProgress-colorPrimary {
+  color: #1976d2 !important;
+}
+
+/* 16. Fix select colors */
+.MuiSelect-select {
+  color: #333333 !important;
+}
+
+/* 17. Fix form control colors */
+.MuiFormControlLabel-label {
+  color: #333333 !important;
+}
+
+/* 18. Fix tab colors */
+.MuiTab-root {
+  color: #666666 !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #1976d2 !important;
+}
+
+/* 19. Fix badge colors */
+.MuiBadge-badge {
+  background: linear-gradient(135deg, #ff4081 0%, #f50057 100%) !important;
+  color: white !important;
+}
+
+/* 20. Fix avatar colors */
+.MuiAvatar-root {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+}
+
+/* 21. Fix rating colors */
+.MuiRating-root {
+  color: #ffb400 !important;
+}
+
+/* 22. Fix switch colors */
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: #1976d2 !important;
+}
+
+/* 23. Fix slider colors */
+.MuiSlider-root {
+  color: #1976d2 !important;
+}
+
+/* 24. Fix pagination colors */
+.MuiPaginationItem-root {
+  color: #666666 !important;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+}
+
+/* 25. Fix snackbar colors */
+.MuiSnackbarContent-root {
+  background: linear-gradient(135deg, #323232 0%, #424242 100%) !important;
+  color: white !important;
+}
+
+/* 26. Fix tooltip colors */
+.MuiTooltip-tooltip {
+  background: linear-gradient(135deg, #323232 0%, #424242 100%) !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+/* 27. Fix backdrop */
+.MuiBackdrop-root {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 28. Fix dialog colors */
+.MuiDialog-paper {
+  background: white !important;
+  color: #333333 !important;
+}
+
+/* 29. Fix stepper colors */
+.MuiStepLabel-label {
+  color: #333333 !important;
+}
+
+.MuiStepLabel-label.Mui-active {
+  color: #1976d2 !important;
+  font-weight: 600;
+}
+
+/* 30. Fix timeline colors */
+.MuiTimelineDot-root {
+  background: #1976d2 !important;
+  color: white !important;
+}
+
+/* 31. Fix accordion colors */
+.MuiAccordion-root {
+  background: white !important;
+  color: #333333 !important;
+}
+
+/* 32. Fix tree view colors */
+.MuiTreeItem-label {
+  color: #333333 !important;
+}
+
+/* 33. Fix speed dial colors */
+.MuiSpeedDial-fab {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+}
+
+/* 34. Fix bottom navigation colors */
+.MuiBottomNavigation-root {
+  background: white !important;
+  border-top: 1px solid #e0e0e0;
+}
+
+.MuiBottomNavigationAction-root {
+  color: #666666 !important;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: #1976d2 !important;
+}
+
+/* 35. Fix breadcrumb colors */
+.MuiBreadcrumbs-root {
+  color: #666666 !important;
+}
+
+.MuiBreadcrumbs-root a {
+  color: #1976d2 !important;
+}
+
+/* 36. Fix skeleton colors */
+.MuiSkeleton-root {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%) !important;
+}
+
+/* 37. Fix color input colors */
+.MuiColorInput-root {
+  background: white !important;
+}
+
+/* 38. Fix date picker colors */
+.MuiPickersDay-day {
+  color: #333333 !important;
+}
+
+.MuiPickersDay-day.Mui-selected {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+}
+
+/* 39. Fix time picker colors */
+.MuiClockNumber-root {
+  color: #333333 !important;
+}
+
+/* 40. Fix toggle button colors */
+.MuiToggleButton-root {
+  color: #666666 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.MuiToggleButton-root.Mui-selected {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%) !important;
+  color: white !important;
+}
+
+/* 41. Enhanced stat card gradients */
+.MuiCard-root:nth-child(1) .MuiTypography-h4 { /* Total Verified */
+  color: #1976d2 !important;
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.MuiCard-root:nth-child(2) .MuiTypography-h4 { /* Valid Emails */
+  color: #4caf50 !important;
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.MuiCard-root:nth-child(3) .MuiTypography-h4 { /* Invalid Emails */
+  color: #f44336 !important;
+  background: linear-gradient(135deg, #f44336, #ef5350);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.MuiCard-root:nth-child(4) .MuiTypography-h4 { /* Credits Left */
+  color: #ff9800 !important;
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 42. Card icon colors */
+.MuiCard-root:nth-child(1) .MuiSvgIcon-root { /* Total Verified */
+  color: #1976d2 !important;
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MuiCard-root:nth-child(2) .MuiSvgIcon-root { /* Valid Emails */
+  color: #4caf50 !important;
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MuiCard-root:nth-child(3) .MuiSvgIcon-root { /* Invalid Emails */
+  color: #f44336 !important;
+  background: linear-gradient(135deg, #f44336, #ef5350);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MuiCard-root:nth-child(4) .MuiSvgIcon-root { /* Credits Left */
+  color: #ff9800 !important;
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 43. Card backgrounds with subtle gradients */
+.MuiCard-root:nth-child(1) { /* Total Verified */
+  background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%) !important;
+  border: 1px solid #bbdefb;
+}
+
+.MuiCard-root:nth-child(2) { /* Valid Emails */
+  background: linear-gradient(135deg, #ffffff 0%, #e8f5e9 100%) !important;
+  border: 1px solid #c8e6c9;
+}
+
+.MuiCard-root:nth-child(3) { /* Invalid Emails */
+  background: linear-gradient(135deg, #ffffff 0%, #ffebee 100%) !important;
+  border: 1px solid #ffcdd2;
+}
+
+.MuiCard-root:nth-child(4) { /* Credits Left */
+  background: linear-gradient(135deg, #ffffff 0%, #fff3e0 100%) !important;
+  border: 1px solid #ffcc80;
+}
+
+/* 44. Fix body background */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 45. Fix container background */
+.MuiContainer-root {
+  background: transparent !important;
+}
+
+/* 46. Fix main content area */
+main {
+  background: transparent !important;
+}
+
+/* 47. Fix grid spacing */
+.MuiGrid-root {
+  margin-top: 0 !important;
+}
+
+/* 48. Fix paper hover effects */
+.MuiPaper-root:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 49. Fix card content alignment */
+.MuiCardContent-root {
+  text-align: center;
+  padding: 24px !important;
+}
+
+/* 50. Fix typography spacing */
+.MuiTypography-h4 {
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+}
+
+.MuiTypography-body2 {
+  margin-top: 4px !important;
+}
+
+/* 51. Fix icon sizing in cards */
+.MuiCardContent-root .MuiSvgIcon-root {
+  font-size: 3rem !important;
+  margin-bottom: 16px;
+}
+
+/* 52. Fix dashboard title */
+.MuiTypography-h4:first-child {
+  color: #1976d2 !important;
+  margin-bottom: 32px !important;
+  text-align: center;
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(25, 118, 210, 0.1);
+}
+
+/* 53. Fix section titles */
+.MuiTypography-h5,
+.MuiTypography-h6 {
+  color: #333333 !important;
+  font-weight: 600;
+  margin-bottom: 16px !important;
+}
+
+/* 54. Fix table header */
+.MuiTableHead-root {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+/* 55. Fix form labels */
+.MuiFormLabel-root {
+  color: #666666 !important;
+  font-weight: 500;
+}
+
+/* 56. Fix input text */
+.MuiInputBase-input {
+  color: #333333 !important;
+  font-weight: 500;
+}
+
+/* 57. Fix select dropdown */
+.MuiSelect-icon {
+  color: #1976d2 !important;
+}
+
+/* 58. Fix menu items */
+.MuiMenuItem-root {
+  color: #333333 !important;
+}
+
+/* 59. Fix list item icons */
+.MuiListItemIcon-root {
+  color: #1976d2 !important;
+}
+
+/* 60. Fix divider in cards */
+.MuiCardContent-root .MuiDivider-root {
+  margin: 16px 0 !important;
+  background: linear-gradient(90deg, transparent, #1976d2, transparent) !important;
+  height: 2px;
+}
+
+/* 61. Add subtle shadow to everything */
+.MuiPaper-root,
+.MuiCard-root,
+.MuiTableContainer-root {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* 62. Fix focus states */
+.Mui-focused {
+  outline: 2px solid #1976d2 !important;
+  outline-offset: 2px;
+}
+
+/* 63. Fix active states */
+.Mui-active {
+  color: #1976d2 !important;
+}
+
+/* 64. Fix selected states */
+.Mui-selected {
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.1) 0%, rgba(33, 150, 243, 0.05) 100%) !important;
+}
+
+/* 65. Fix disabled states */
+.Mui-disabled {
+  opacity: 0.5;
+  color: #999999 !important;
+}
+
+/* 66. Fix error states */
+.Mui-error {
+  color: #f44336 !important;
+}
+
+/* 67. Fix success states */
+.Mui-success {
+  color: #4caf50 !important;
+}
+
+/* 68. Fix warning states */
+.Mui-warning {
+  color: #ff9800 !important;
+}
+
+/* 69. Fix info states */
+.Mui-info {
+  color: #2196f3 !important;
+}
+
+/* 70. Fix primary colors */
+.Mui-primary {
+  color: #1976d2 !important;
+}
+
+/* 71. Fix secondary colors */
+.Mui-secondary {
+  color: #dc004e !important;
+}
+
+/* 72. Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%) !important;
+  }
+  
+  .MuiCard-root {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%) !important;
+    color: #ffffff !important;
+    border: 1px solid #444444;
+  }
+  
+  .MuiTypography-root {
+    color: #ffffff !important;
+  }
+  
+  .MuiPaper-root {
+    background: #1e1e1e !important;
+    color: #ffffff !important;
+  }
+  
+  .MuiTable-root {
+    background: #1e1e1e;
+  }
+  
+  .MuiTableCell-root {
+    color: #ffffff !important;
+    border-bottom: 1px solid #444444;
+  }
+  
+  .MuiTableHead-root .MuiTableCell-root {
+    background: #2d2d2d;
+    color: #64b5f6 !important;
+  }
+}
+
+/* 73. High contrast mode */
+@media (prefers-contrast: high) {
+  .MuiCard-root {
+    border: 2px solid #1976d2 !important;
+  }
+  
+  .MuiTypography-h4 {
+    color: #000000 !important;
+  }
+  
+  .MuiButton-contained {
+    border: 2px solid #000000 !important;
+  }
+}
+
+/* 74. Print styles */
+@media print {
+  .MuiCard-root {
+    border: 1px solid #000000 !important;
+    background: white !important;
+    color: black !important;
+  }
+  
+  .MuiTypography-root {
+    color: black !important;
+  }
+}
+
+/* 75. Accessibility improvements */
+.MuiButton-root:focus-visible {
+  outline: 3px solid #1976d2 !important;
+  outline-offset: 2px;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root:focus-within {
+  outline: 2px solid #1976d2 !important;
+  outline-offset: 2px;
+}
